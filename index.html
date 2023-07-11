@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <div class="nav-logo">
+        <img src="logo.png" alt="Logo" class="logo" />
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-auth">
+        <button class="nav-button">Sign In</button>
+        <button class="nav-button nav-button-highlight">Register</button>
+      </div>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search..." />
+      <button id="search-button">Search</button>
+    </div>
+
+    <div class="books-container" id="books-container">
+      <!-- Book cards will be dynamically generated here -->
+    </div>
+
+    <main>
+      <div id="books-container">
+        <!-- Book listings will be dynamically loaded here -->
+      </div>
+
+      <div id="pagination-container">
+        <button id="load-more-btn">Load More</button>
+      </div>
+
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search books..." />
+        <div id="suggestions-container">
+          <!-- Suggestions will be dynamically loaded here -->
+        </div>
+      </div>
+
+      <div id="filter-container">
+        <select id="filter-select">
+          <option value="">All</option>
+          <option value="title">Title</option>
+          <option value="author">Author</option>
+          <option value="subject">Subject</option>
+          <option value="publish-date">Publish Date</option>
+        </select>
+      </div>
+
+      <div id="book-count">
+        <!-- Book count display -->
+      </div>
+
+      <div id="cart-container">
+        <h3>Cart</h3>
+        <ul id="cart-list">
+          <!-- Cart items will be dynamically loaded here -->
+        </ul>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
